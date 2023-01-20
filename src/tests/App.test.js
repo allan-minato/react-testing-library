@@ -1,9 +1,9 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { act } from 'react-dom/test-utils';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
-import { act } from 'react-dom/test-utils';
 
 it('Teste se a aplicação é redirecionada para a página inicial, na URL / ao clicar no link Home da barra de navegação', () => {
   const { history } = renderWithRouter(<App />);
